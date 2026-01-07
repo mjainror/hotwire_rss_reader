@@ -1,0 +1,2 @@
+rvm use ruby-4.0.0@hotwire_rss_reader --create
+
