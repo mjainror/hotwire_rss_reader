@@ -71,3 +71,4 @@ gem "devise"
 gem "feedjira"          # RSS parsing
 gem "http"              # HTTP client (simpler than open-uri)
 gem "bootstrap", "~> 5.3"
+gem "sassc-rails"
