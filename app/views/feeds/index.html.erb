@@ -1,12 +1,1 @@
-<div class="d-flex justify-content-between align-items-center mb-3">
-  <h2>Your RSS Feeds</h2>
-  <%= link_to "Add Feed", new_feed_path, class: "btn btn-primary" %>
-</div>
-
-<ul class="list-group">
-  <% @feeds.each do |feed| %>
-    <li class="list-group-item">
-      <%= link_to feed.title, feed %>
-    </li>
-  <% end %>
-</ul>
+<%= render "feeds/feed_list", feed_title: "All Feeds" %>

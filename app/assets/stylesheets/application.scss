@@ -13,5 +13,25 @@
  *= require_tree .
  *= require_self
  */
- 
+
  @import "bootstrap";
+
+.inner-card {
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #FFFFFF;
+
+  &:hover {
+    background-color: #eeeff0;
+    cursor: pointer;
+  }
+
+  &.active-card {
+    background-color: #eeeff0;
+  }
+}
+
+.card-section {
+  max-height: 75vh;
+  overflow-y: scroll;
+}

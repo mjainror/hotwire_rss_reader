@@ -23,9 +23,10 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= render "layouts/navbar" %>
+  <body>    
     <div class="container">
+      <%= render "layouts/navbar" %>
+
       <%= yield %>
     </div>
   </body>

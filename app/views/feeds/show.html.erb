@@ -1,12 +1,1 @@
-<h2><%= @feed.title %></h2>
-
-<ul class="list-group mt-3">
-  <% @entries.each do |entry| %>
-    <li class="list-group-item">
-      <strong><%= link_to entry.title, entry.url, target: "_blank" %></strong>
-      <div class="text-muted small">
-        <%= entry.published&.strftime("%d %b %Y") %>
-      </div>
-    </li>
-  <% end %>
-</ul>
+<%= render "feeds/feed_list", feed_title: @feed.title %>

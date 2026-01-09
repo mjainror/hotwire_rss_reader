@@ -1,0 +1,24 @@
+<div class="row">
+  <h2><%= feed_title %></h2>
+  <div class="col-lg-4 col-md-4 col-sm-6" style="border: 1px solid #dee2e6;padding: 0;">
+    <% if @entries.present? %>
+      <div class="card-section">
+        <% @entries.each do |entry| %>
+          <div class="inner-card">
+            <strong><%= entry.title %></strong>
+            <div class="text-muted small">
+              <% image_url = entry.image_url.present? ? entry.image_url : entry.feed_image_url %>
+              <% if image_url %>
+                <%= image_tag image_url, width: "15" %>
+              <% end %>
+              <%= entry.feed_name %>
+              |
+              <%= entry.published&.strftime("%d %b %Y") %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-6" style="border: 1px solid #dee2e6;"> sdfdsfds</div>
+</div>
